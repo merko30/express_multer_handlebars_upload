@@ -17,7 +17,7 @@ app.use("/uploads", express.static("uploads"));
 app.use(cors());
 
 // database setup
-mongoose.connect('mongodb://merko30:password1@ds247141.mlab.com:47141/mern_upload', { useNewUrlParser: true }).then(() => {
+mongoose.connect('MONGODB URI', { useNewUrlParser: true }).then(() => {
     console.log('Connected to database')
 }).catch(err => {
     console.log(err);
